@@ -1,13 +1,92 @@
-body {
+.App {
+  text-align: center;
+  background-color: #edd4d9;
+  padding-bottom: 30px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 80%;
+  height: 100%;
+  border: 1px solid black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  height: 100%;
+  background-color: #edd4d9;
+}
+div#root {
+  display: flex;
+  justify-content: center;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+h1 {
+  margin: 0;
+  padding-top: 20px;
+}
+
+.item-todo {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 15px;
+  background-color: #d6b4cc;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+.App .done {
+  border: 2px dashed yellow;
+  box-sizing: border-box;
+}
+
+.App .item-todo .item-text {
+  display: inline-block;
+}
+
+.App input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid black;
+  outline: none;
+  background: transparent;
+}
+.add-task-button {
+  border-radius: 0 15% 15% 0;
+}
+button {
+  padding: 16px 7px;
+  border: none;
+  border-radius: 15%;
+  cursor: pointer;
+  outline: none;
+  background-color: #d6b7b4;
+  color: black;
+}
+
+.done .text-content {
+  text-decoration: line-through;
+}
+
+.ToDoForm {
+  display: flex;
+  justify-content: center;
+}
+.change-task {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.change-task:nth-child(2) {
+  margin-top: 10px;
+}
+.clear-completed {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
